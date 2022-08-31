@@ -1,0 +1,49 @@
+body {
+    font-family: "Roboto", "sans-serif";
+    color: var(--text-color);
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section--title {
+    display: flex;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    
+    margin-top: 0%;
+    margin-bottom: 50px;
+}
+.portfolio-section {
+    padding: 94px 0px;
+}
+.advantages, .team, .companies {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.advantages__list, .examples__list, .team__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}

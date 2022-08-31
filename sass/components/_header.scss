@@ -1,0 +1,115 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+.container.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ECECEC;
+}
+.logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--main-color);
+    
+    padding: 25px 0px 25px;
+    margin-right: 100px;
+
+    display: inline-block;
+    transition: color var(--time-duration) ;
+    &:hover {
+        color: var(--text-color);
+    }
+    &.footer {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    &-black {
+        color: var(--black-color);
+    }
+    &-white {
+        color: var(--white-color);
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    &-page {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        line-height: 1.14;
+        
+        color: var(--text-color);
+    
+        padding: 32px 0px 32px;
+        margin-right: 50px;
+        display: inline-block;
+        position: relative;
+    
+        transition: color var(--time-duration);
+        &:hover, &:focus {
+            color: var(--main-color);
+        }
+        &.current {
+            color: var(--main-color);
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                border-bottom: 4px var(--main-color) solid;
+                border-radius: 2px; 
+            
+                position: absolute;
+                bottom: -2px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    &-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0px 32px;
+    
+        transition: color var(--time-duration);
+    
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px; 
+        letter-spacing: 0.02em;
+        line-height: 1.14;
+    
+        color: var(--icogrey-color);   
+    
+        margin-right: 0px;
+        &:hover, &:focus {
+            color: var(--main-color);
+        }
+        &:last-child {
+            margin-left: 50px;
+        }
+    }
+    &-icon {
+        fill: var(--icogrey-color);
+        margin-right: 10px;
+        .contacts-info:hover &, .contacts-info:focus & {
+            fill: var(--main-color);
+        }
+    }
+}

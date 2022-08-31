@@ -1,0 +1,39 @@
+.companies {
+    background-color: var(--white-color);
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__item {
+        box-sizing: border-box;
+        width: 170px;
+        height: 92px;
+        background-color: transparent;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    
+        color: currentColor;
+        transition: border-color var(--time-duration);
+        &:hover, &:focus {
+            border-color: var(--main-color);
+        }
+    }
+    &__icon {
+        fill: #AFB1B8;
+        transition: fill var(--time-duration);
+        .companies__link:hover &, 
+        .companies__link:focus & {
+            fill: var(--main-color);
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 100%;
+        width: 100%;
+    }
+}
