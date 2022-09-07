@@ -19,6 +19,7 @@ a, a:hover, a:focus, a:active {
 }
 img {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -34,15 +35,25 @@ img {
     
     margin-top: 0%;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+    }
 }
 .portfolio-section {
-    padding: 94px 0px;
+    padding: 60px 0px;
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+    }
 }
 .advantages, .team, .companies {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 15px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
-.advantages__list, .examples__list, .team__list {
+.examples__list {
     display: flex;
     flex-direction: row;
     margin: 0%;
