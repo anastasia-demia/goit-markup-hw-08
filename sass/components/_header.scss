@@ -22,7 +22,10 @@
     color: var(--main-color);
     
     padding: 25px 0px 25px;
-    margin-right: 100px;
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 100px;
+    }
 
     display: inline-block;
     transition: color var(--time-duration) ;

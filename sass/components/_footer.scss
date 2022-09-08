@@ -12,9 +12,24 @@
         display: flex;
     }
 }
+.footer-wrap {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
 .footer-info {
     @media screen and (max-width: 767px) {
-        width: 450px;
+        max-width: 450px;
+    }
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
     }
 }
 .address {
@@ -43,7 +58,7 @@
         margin-bottom: 9px;
     }
     &-list {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1199px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,11 +68,14 @@
 
 .basement {
     @media screen and (max-width: 767px) {
+        max-width: 450px;
+        margin-top: 48px;
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 1199px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 450px;
-        margin-top: 53px;
     }
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
@@ -107,17 +125,18 @@
 
 .subscribe {
     @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
+    @media screen and (max-width: 1199px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 450px;
-        margin-top: 60px;
     }
     @media screen and (min-width: 1200px) {
         margin-left: 71px;
     }
     &-form {
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 1199px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -137,7 +156,6 @@
         padding: 20px 0px 20px ;
     }
     &-input {
-        width: 358px;
         height: 50px;
         padding: 15px 16px;
     
@@ -157,7 +175,13 @@
         }
         @media screen and (min-width: 320px) {
             margin-bottom: 20px;
+            min-width: 290px;
+        }
+        @media screen and (min-width: 480px) {
             width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 358px;
         }
     }
     &-button {
