@@ -19,6 +19,9 @@
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: 738px;
         }
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
     }
     &__item {
         display: flex;

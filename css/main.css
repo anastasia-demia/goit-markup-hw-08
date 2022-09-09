@@ -47,6 +47,11 @@ img {
   margin-top: 0%;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .section--title {
+    width: calc(100% - 30px);
+  }
+}
 @media screen and (max-width: 1199px) {
   .section--title {
     font-size: 28px;
@@ -133,9 +138,16 @@ img {
     padding-left: 10px;
   }
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+    padding-left: 15px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 100px;
+    padding-left: 0;
   }
 }
 .logo:hover {
@@ -144,6 +156,7 @@ img {
 .logo.footer {
   padding-top: 10px;
   padding-bottom: 15px;
+  margin-right: 0;
 }
 .logo-black {
   color: var(--black-color);
@@ -169,9 +182,9 @@ img {
   line-height: 1.14;
   color: var(--text-color);
   padding: 32px 0px 32px;
-  margin-right: 50px;
   display: inline-block;
   position: relative;
+  margin-right: 50px;
   transition: color var(--time-duration);
 }
 .menu-page:hover, .menu-page:focus {
@@ -200,6 +213,9 @@ img {
   .contacts {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -225,12 +241,16 @@ img {
 .contacts-info:hover, .contacts-info:focus {
   color: var(--main-color);
 }
-.contacts-info:last-child {
-  margin-left: 50px;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-info {
-    padding: 20px 0px;
+    padding: 5px 15px;
+    font-size: 12px;
+    line-height: 0.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-info:last-child {
+    margin-left: 50px;
   }
 }
 .contacts-icon {
@@ -587,6 +607,11 @@ img {
     width: 738px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    width: 1200px;
+  }
+}
 .advantages__item {
   display: flex;
   flex-direction: column;
@@ -668,6 +693,12 @@ img {
   width: 100%;
   bottom: 0;
 }
+@media screen and (min-width: 1200px) {
+  .examples__list {
+    display: flex;
+    justify-content: center;
+  }
+}
 .examples__item {
   margin-right: 30px;
   position: relative;
@@ -707,6 +738,7 @@ img {
   .team__list {
     display: flex;
     flex-direction: row;
+    width: calc(100% - 60px);
   }
 }
 .team__information {
@@ -803,6 +835,11 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 768px) {
+  .companies__list {
+    width: calc(100% - 30px);
+  }
+}
 @media screen and (min-width: 1200px) {
   .companies__list {
     justify-content: center;
@@ -847,9 +884,9 @@ img {
   height: 100%;
   width: 100%;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .companies__title {
-    width: 450px;
+    width: calc(100% - 30px);
   }
 }
 

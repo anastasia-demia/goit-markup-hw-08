@@ -36,6 +36,9 @@ img {
     margin-top: 0%;
     margin-bottom: 50px;
 
+    @media screen and (min-width: 480px) {
+        width: calc(100% - 30px);
+    }
     @media screen and (max-width: 1199px) {
         font-size: 28px;
     }
