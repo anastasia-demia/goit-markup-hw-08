@@ -10,6 +10,8 @@
 .container.footer {
     @media screen and (min-width: 1200px) {
         display: flex;
+        justify-content: space-between;
+        width: calc(100% - 1px);
     }
 }
 .footer-wrap {
@@ -25,11 +27,13 @@
     @media screen and (max-width: 767px) {
         max-width: 450px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 10%;
+    }
     @media screen and (max-width: 1199px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 10%;
     }
 }
 .address {
@@ -131,9 +135,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 71px;
     }
     &-form {
         @media screen and (max-width: 1199px) {

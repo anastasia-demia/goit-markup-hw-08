@@ -2,6 +2,9 @@
     background-color: #F5F4FA;
     &__list {
         margin: 0% auto;
+        @media screen and (max-width: 479px) {
+            width: 320px;
+        }
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;

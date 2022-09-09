@@ -22,7 +22,12 @@
     color: var(--main-color);
     
     padding: 25px 0px 25px;
-    
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 0.86;
+        padding-left: 10px;
+    }
     @media screen and (min-width: 1200px) {
         margin-right: 100px;
     }
@@ -46,6 +51,9 @@
 .menu {
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     &-page {
         font-style: normal;
         font-weight: 500;
@@ -82,8 +90,17 @@
 }
 
 .contacts {
-    display: flex;
-    flex-direction: row;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
     &-info {
         display: flex;
         justify-content: center;
@@ -106,6 +123,9 @@
         }
         &:last-child {
             margin-left: 50px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding: 20px 0px;
         }
     }
     &-icon {
