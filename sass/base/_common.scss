@@ -36,21 +36,13 @@ img {
     margin-top: 0%;
     margin-bottom: 50px;
 
-    @media screen and (min-width: 480px) {
-        width: calc(100% - 30px);
-    }
     @media screen and (max-width: 1199px) {
         font-size: 28px;
     }
 }
-.portfolio-section {
+
+.advantages, .team, .companies, .examples, .portfolio-section {
     padding: 60px 0px;
-    @media screen and (min-width: 1200px) {
-        padding: 94px 0px;
-    }
-}
-.advantages, .team, .companies, .examples {
-    padding: 60px 15px;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;

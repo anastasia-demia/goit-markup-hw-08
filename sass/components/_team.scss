@@ -2,9 +2,7 @@
     background-color: #F5F4FA;
     &__list {
         margin: 0% auto;
-        @media screen and (max-width: 479px) {
-            width: 320px;
-        }
+
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
@@ -33,9 +31,9 @@
         @media screen and (min-width: 320px) {
             margin-bottom: 30px;
         }
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
+        // @media screen and (min-width: 768px) {
+        //     width: 354px;
+        // }
         @media screen and (min-width: 1200px) {
             width: calc((100% - 90px) / 4);
             &:last-child {

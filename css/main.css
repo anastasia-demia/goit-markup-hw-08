@@ -47,31 +47,17 @@ img {
   margin-top: 0%;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 480px) {
-  .section--title {
-    width: calc(100% - 30px);
-  }
-}
 @media screen and (max-width: 1199px) {
   .section--title {
     font-size: 28px;
   }
 }
 
-.portfolio-section {
+.advantages, .team, .companies, .examples, .portfolio-section {
   padding: 60px 0px;
 }
 @media screen and (min-width: 1200px) {
-  .portfolio-section {
-    padding: 94px 0px;
-  }
-}
-
-.advantages, .team, .companies, .examples {
-  padding: 60px 15px;
-}
-@media screen and (min-width: 1200px) {
-  .advantages, .team, .companies, .examples {
+  .advantages, .team, .companies, .examples, .portfolio-section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -85,7 +71,10 @@ img {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -602,16 +591,6 @@ img {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantages__list {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list {
-    width: 1200px;
-  }
-}
 .advantages__item {
   display: flex;
   flex-direction: column;
@@ -620,11 +599,6 @@ img {
 }
 .advantages__item:not(:last-child) {
   margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .advantages__item {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
@@ -636,7 +610,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .advantages__item {
-    width: 270px;
     margin-right: 30px;
   }
 }
@@ -723,11 +696,6 @@ img {
 .team__list {
   margin: 0% auto;
 }
-@media screen and (max-width: 479px) {
-  .team__list {
-    width: 320px;
-  }
-}
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -756,11 +724,6 @@ img {
 @media screen and (min-width: 320px) {
   .team__item {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -830,16 +793,6 @@ img {
     justify-content: center;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .companies__list {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .companies__list {
-    width: calc(100% - 30px);
-  }
-}
 @media screen and (min-width: 1200px) {
   .companies__list {
     justify-content: center;
@@ -862,7 +815,6 @@ img {
 @media screen and (max-width: 479px) {
   .companies__item {
     margin-bottom: 30px;
-    width: 100%;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -883,11 +835,6 @@ img {
   align-items: center;
   height: 100%;
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .companies__title {
-    width: calc(100% - 30px);
-  }
 }
 
 .selection {
