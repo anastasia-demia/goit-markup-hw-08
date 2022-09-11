@@ -120,7 +120,7 @@ img {
   display: inline-block;
   transition: color var(--time-duration);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     line-height: 0.86;
@@ -323,6 +323,11 @@ img {
   margin-bottom: 9px;
 }
 @media screen and (max-width: 1199px) {
+  .address-item {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1199px) {
   .address-list {
     display: flex;
     flex-direction: column;
@@ -492,6 +497,11 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob-hero.jpg);
   }
 }
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-2x-mob.jpg);
+  }
+}
 @media screen and (min-width: 480px) {
   .banner {
     height: 400px;
@@ -502,10 +512,20 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet-hero.jpg);
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-2x-tablet.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .banner {
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-2x-desk.jpg);
   }
 }
 .banner__title {
