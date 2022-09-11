@@ -252,12 +252,12 @@ img {
 
 .footer-basement {
   background-color: #2F303A;
-  padding: 60px 15px;
+  padding: 60px 0px;
 }
 @media screen and (min-width: 1200px) {
   .footer-basement {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
 }
 
@@ -265,7 +265,6 @@ img {
   .container.footer {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 1px);
   }
 }
 
