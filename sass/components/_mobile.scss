@@ -1,0 +1,96 @@
+.mob {
+    &__button {
+        padding: 10px 0px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border: none;
+        // @media screen and (min-width: 768px) {
+        //     display: none;
+        // }
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding: 48px 30px;
+    &__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 15px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border: none;
+    }
+    &__page {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 0.85;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+        &.--curent {
+            color: var(--main-color);
+        }
+    }
+    &__contacts {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 0.86;
+        letter-spacing: 0.02em;
+        color: var(--icogrey-color);
+    }
+    &__socs {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+        &:not(:first-child) {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--main-color);
+        padding-right: 10px;
+    }
+    &__contacts {
+        margin-bottom: 64px;
+    }
+    &__info {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 0.85;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+        &.--blue {
+            color: var(--main-color);
+        }
+        &.--small {
+            font-size: 24px;
+        }
+    }
+}
