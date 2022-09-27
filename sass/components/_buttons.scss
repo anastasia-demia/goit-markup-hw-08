@@ -10,6 +10,9 @@
         justify-content: center;
         margin-bottom: 30px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
     &-item {
         padding-right: 8px;
         @media screen and (max-width: 767px) {
