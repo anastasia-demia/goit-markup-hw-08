@@ -50,6 +50,7 @@ img {
 @media screen and (max-width: 1199px) {
   .section--title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -952,12 +953,12 @@ img {
 .companies__item:hover, .companies__item:focus {
   border-color: var(--main-color);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 399px) {
   .companies__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
   .companies__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
   }
@@ -1042,11 +1043,6 @@ img {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .portfolio {
-    width: 290px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
@@ -1158,8 +1154,6 @@ img {
 }
 
 .modal {
-  width: 450px;
-  min-height: 609px;
   padding: 40px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1168,6 +1162,18 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 94%;
+    height: 96%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1185,6 +1191,11 @@ img {
   color: var(--text-color);
   margin-bottom: 12px;
   margin-top: 0;
+}
+@media screen and (max-width: 479px) {
+  .modal-title {
+    font-size: 14px;
+  }
 }
 .modal-button {
   width: 30px;
@@ -1225,6 +1236,12 @@ img {
   fill: var(--text-color);
   transition: fill var(--time-duration);
 }
+@media screen and (max-width: 479px) {
+  .input-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
 .input-form:hover + .input-icon, .input-form:focus + .input-icon {
   fill: var(--main-color);
 }
@@ -1247,12 +1264,25 @@ img {
   resize: none;
   padding: 12px;
 }
+@media screen and (max-width: 479px) {
+  .input-form.last {
+    height: 80px;
+  }
+}
 .input-form:hover, .input-form:focus {
   border-color: var(--main-color);
   outline-color: var(--main-color);
 }
 .input-form::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (max-width: 479px) {
+  .input-form {
+    font-size: 10px;
+    height: 25px;
+    padding: 5px;
+    padding-left: 37px;
+  }
 }
 .input-name {
   font-style: normal;
@@ -1281,6 +1311,11 @@ img {
   letter-spacing: 0.03em;
   margin-left: 7px;
   color: var(--icogrey-color);
+}
+@media screen and (max-width: 479px) {
+  .checkbox-agreement {
+    font-size: 12px;
+  }
 }
 .checkbox-agreement span {
   width: 16px;
