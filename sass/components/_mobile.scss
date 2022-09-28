@@ -34,6 +34,11 @@
         box-sizing: border-box;
         border: none;
     }
+    &__option {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
     &__page {
         display: inline-block;
         font-weight: 500;
@@ -41,7 +46,6 @@
         line-height: 0.85;
         text-align: center;
         letter-spacing: 0.02em;
-        margin-bottom: 32px;
         &.--curent {
             color: var(--main-color);
         }
@@ -76,13 +80,17 @@
     &__contacts {
         margin-bottom: 64px;
     }
+    &__choice {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
     &__info {
         display: inline-block;
         font-weight: 500;
         font-size: 34px;
         line-height: 0.85;
         letter-spacing: 0.02em;
-        margin-bottom: 32px;
         &.--blue {
             color: var(--main-color);
         }
