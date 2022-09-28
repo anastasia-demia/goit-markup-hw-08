@@ -3,7 +3,6 @@
     flex-direction: row;
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
-        padding-left: 15px;
         margin-bottom: 40px;
     }
     @media screen and (min-width: 768px) {
@@ -16,7 +15,9 @@
     &-item {
         padding-right: 8px;
         @media screen and (max-width: 767px) {
-            margin-bottom: 15px;
+            &:not(:nth-last-child(-n+2)) {
+                margin-bottom: 15px;
+            }
         }
     }
     &-button {

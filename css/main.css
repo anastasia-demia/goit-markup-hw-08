@@ -989,7 +989,6 @@ img {
 @media screen and (max-width: 767px) {
   .selection {
     flex-wrap: wrap;
-    padding-left: 15px;
     margin-bottom: 40px;
   }
 }
@@ -1008,7 +1007,7 @@ img {
   padding-right: 8px;
 }
 @media screen and (max-width: 767px) {
-  .selection-item {
+  .selection-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;
   }
 }
